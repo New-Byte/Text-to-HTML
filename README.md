@@ -6,11 +6,11 @@ Covert normal Text to HTML script using Django.
 ## Steps to create Project:
 # 1. Create a Django project.
 django admin startproject text_to_html
-# 2. Create app in that django-project.
+## 2. Create app in that django-project.
 python manage.py startapp blog
-# 3. Install django-ckeditor, ckeditor provides a text editor in django.
+## 3. Install django-ckeditor, ckeditor provides a text editor in django.
 pip install ckeditor
-# 4. Add your app name in installed apps.
+## 4. Add your app name in installed apps.
 INSTALLED_APPS = [
     'texteditor',
     'ckeditor',
@@ -21,7 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-# 5. Add files and Folder to the Django Project
+## 5. Add files and Folder to the Django Project
 We need to create a template folder in the django folder and a urls.py file in the app folder.
 
 1. Create a new folder in the django folder(here, text_to_html folder) save it with the name template.
@@ -54,7 +54,7 @@ urlpatterns = [
     path('',include('texteditor.urls'))
 ]
 
-# 6.  Create Text to Html convertor
+## 6.  Create Text to Html convertor
 For creating text to html converters we have to create a class model named Editor in which we are going to have our text editor template. After the model we need to create a form of that model.
 1. Create a model for Editor in blog(your_app_name) > models.py .
 
